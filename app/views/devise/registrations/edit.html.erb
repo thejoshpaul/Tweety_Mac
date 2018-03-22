@@ -31,6 +31,27 @@
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
+  <div class="form-group">
+    <strong>Upload a Profile Pic:</strong>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :name, placeholder: "Your Name", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :username, placeholder: "Choose a @username", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :location, placeholder: "Location", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_area :bio, placeholder: "Tell us about yourself...", class: "form-control" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
